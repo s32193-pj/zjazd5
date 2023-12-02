@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <vector>;
+#include <vector>
 
 int main()
 {
@@ -24,15 +24,15 @@ int main()
 		wektor_uzytkownika.push_back(x);
 	}
 
-	/*for (int k : wektor_uzytkownika)
+	for (const auto& k : wektor_uzytkownika)
 	{
-		cout << wektor_uzytkownika[k] << " ";
-	}*/
+		cout << k << " ";
+	}
 	
 	int wektor_max = 0;
-	int index_wektor_max;
+	int index_wektor_max = 0;
 	
-	for (int k = 0; k < size; k++)
+	/*for (int k = 0; k < size; k++)
 	{
 		cout << wektor_uzytkownika[k] << " ";
 		
@@ -41,9 +41,11 @@ int main()
 			wektor_max = wektor_uzytkownika[k];
 			index_wektor_max = k;
 		}
-	}
+	}*/
 	cout << endl << "wektor_max: " << wektor_max << endl << "index_wektor_max: " << index_wektor_max << endl;
 
+	
+	
 	int array_wejsciowy[5][2] = { 1,2,3,4,5,6,7,8,9,0 };
 	
 	cout << endl <<"Array wejsciowy: " << endl << endl;
